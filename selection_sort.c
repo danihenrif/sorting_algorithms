@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void changePosition(int *v, int max_value_position, int positionmark){
+void tradeValues(int *v, int max_value_position, int positionmark){
   int aux = v[max_value_position];
   v[max_value_position] = v[positionmark];
   v[positionmark] = aux;
@@ -16,7 +16,7 @@ void selectionSort(int *vet,  int N){
         argmax = j;
       }
     }
-    changePosition(vet,argmax,i);
+    tradeValues(vet,argmax,i);
   }
 }
 
