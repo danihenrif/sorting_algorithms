@@ -1,5 +1,5 @@
-#ifndef BUBBLE_SORT_H 
-#define BUBBLE_SORT_H
+#ifndef BUBBLE_SORT_HPP 
+#define BUBBLE_SORT_HPP
 
 #include <iostream>
 using namespace std;
