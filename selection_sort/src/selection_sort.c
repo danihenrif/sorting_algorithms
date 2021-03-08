@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "../include/selection_sort.h"
 
 void tradeValues(int *v, int max_value_position, int positionmark){
   int aux = v[max_value_position];
@@ -18,26 +18,4 @@ void selectionSort(int *vet,  int N){
     }
     tradeValues(vet,argmax,i);
   }
-}
-
-int main(){
-  
-  int *vetor;
-  
-  for(int i = 10 , j = 0; i > 0  ; i--, j++){
-    *(vetor + j) = i;
-  }
-  for(int i = 0; i < 10 ; i++){
-    printf("%d \t", *(vetor + i));
-  }
-  
-  printf("\n");
-  
-  selectionSort(vetor,10);
-
-  for(int i = 0; i < 10 ; i++){
-    printf("%d \t", *(vetor + i));
-  }
-
-  return 0;
 }
