@@ -1,5 +1,6 @@
-#include <iostream>
-void bubbleSortGrowing(int *vet,  int N){
+#include "../include/bubble_sort.hpp"
+
+void bubbleSort(int *vet,  int N){
   int aux;
   bool conflict;
   do{
@@ -15,8 +16,7 @@ void bubbleSortGrowing(int *vet,  int N){
   }while(conflict == true);
 }
 
-
-void bubbleSortGrowing2(int *vet,  int N){
+void bubbleSort2(int *vet,  int N){
   int aux;
   bool conflict;
   for(int i = 0 ; i < N ; i++){
@@ -31,26 +31,4 @@ void bubbleSortGrowing2(int *vet,  int N){
       if(conflict == false) return;
     }  
   } 
-}
-
-int main(){
-  
-  int *vetor;
-  
-  for(int i = 10 , j = 0; i > 0  ; i--, j++){
-    *(vetor + j) = i;
-  }
-  for(int i = 0; i < 10 ; i++){
-    printf("%d \t", *(vetor + i));
-  }
-  
-  printf("\n");
-  
-  bubbleSortGrowing2(vetor,10);
-
-  for(int i = 0; i < 10 ; i++){
-    printf("%d \t", *(vetor + i));
-  }
-
-  return 0;
 }
