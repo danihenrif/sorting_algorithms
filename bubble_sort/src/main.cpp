@@ -9,6 +9,7 @@ int main(){
   for(int i = 10 , j = 0; i > 0  ; i--, j++){
     *(vetor + j) = i;
   }
+  
   for(int i = 0; i < 10 ; i++){
     printf("%d \t", *(vetor + i));
   }
